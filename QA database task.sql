@@ -56,3 +56,10 @@ join customer on costomer.id = customer_orders.customer_id
 join orders on orders.id = customer_orders.order_id
 group by customer.name, customer.phone
 order by sum desc;
+
+--    name     |    phone    | sum
+---------------+-------------+-----
+-- John Connor | 88005553535 |  71
+-- Rembo       | 88008761595 |  65
+-- Dude        | 89124687912 |  52
+-- Batman      | 88006218934 |  12
